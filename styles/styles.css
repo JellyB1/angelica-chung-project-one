@@ -236,7 +236,6 @@ header {
 .new-models-section article,
 .night-drive-section article {
 	width: 45%;
-	/* margin-top: 10%; */
 }
 
 .large-rectangle { 
@@ -386,10 +385,26 @@ form button {
 }
 
 @media (max-width: 890px) {
+	.news-articles .square-image:last-child {
+		display: none;
+	}
+
+	.image-container-flex .square-image:nth-child(2) {
+		margin: 0px;
+		margin-left: 30px;
+
+	}
+	.square-image {
+		margin-bottom: 40px;
+		width: calc((100% / 2) - 30px);
+	}
+
+	
 	.small-square {
 		float: none;
 		width: 100%;
 	}
+
 	.highlights-section article {
 		width: 100%;
 		padding: 0%;

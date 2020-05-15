@@ -344,9 +344,7 @@ form button {
 /* Start media queries */
 
 @media (max-width: 990px) {
-	header {
-		height: 90vh;
-	}
+
 	h1 {
 		letter-spacing: 1.2px;
 		font-size: 8.5rem;
@@ -432,19 +430,19 @@ form button {
 }
 
 @media (max-width: 768px) {
-	/* .small-square {
-		float: none;
-		width: 100%;
+	h1 {
+		font-size: 6rem;
+		line-height: 6rem;
 	}
-	.highlights-section article {
-		width: 100%;
-		padding: 0%;
-		margin-top: 20px;
-		/* padding: 0% 3%;  
-		float: none;
-	} */
-
-	/* square-image */
+	.landing-text {
+		bottom: 20px;
+		width: 50%;
+		max-width: 350px;
+	}
+	.landing-text p {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+	}
 	.about-section {
 		padding: 50px 0px;
 	}
@@ -467,28 +465,30 @@ form button {
 }
 
 @media (max-width: 480px) {
-	header {
-		height: 90vh;
-		
-	}
 	h1 {
-		font-size: 6rem;
-		line-height: 6rem;
+		/* font-size: 6rem;
+		line-height: 6rem; */
+		/* margin-bottom: 0; */
 	}
 	.logo,
 	.social-media {
 		visibility: hidden;
 	}
 	.landing-text {
-		bottom: 0px;
+		
+		/* width: 50%; */
 	}
+	/* .landing-text p {
+		font-size: 1.8rem;
+		line-height: 2.1rem;
+	} */
 	.new-models-section h2,
 	.night-drive-section h2 {
 		line-height: auto;
 		font-size: 3.5rem;
 	} 
 	.address {
-		width: 66%;
+		width: 62%;
 	}
 	.footer-nav {
 		width: 33%;

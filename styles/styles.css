@@ -222,7 +222,9 @@ header {
 /* Styling for .new-models-section & .night-drive-section */
 .new-models-section h2,
 .night-drive-section h2 {
-	width: 55%;
+	/* width: 55%; */
+	width: 90%;
+	margin-top: 3%;
 }
 .new-models-section article,
 .night-drive-section .large-rectangle {

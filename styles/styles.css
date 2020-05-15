@@ -119,9 +119,17 @@ header {
 	float: left;
 }
 .navbar a:hover
-.navbar a:focus{
+.navbar a:focus {
 	border-bottom: 5px solid #CC1D36;
 }
+
+.hamburg-menu {
+	display: none;
+	font-size: 50px;
+	float: right;
+}
+
+
 
 /* Styling for main logo on page */
 .landing-text {
@@ -439,6 +447,9 @@ form button {
 		width: 50%;
 		max-width: 350px;
 	}
+	.social-media {
+		bottom: 20px;
+	}
 	.landing-text p {
 		font-size: 1.8rem;
 		line-height: 2.1rem;
@@ -464,6 +475,15 @@ form button {
 	}
 }
 
+@media (max-width: 600px) {
+	.navbar,
+	.social-media {
+		display: none;
+	}
+	.hamburg-menu {
+		display: block;
+	}
+}
 @media (max-width: 480px) {
 
 	.logo,

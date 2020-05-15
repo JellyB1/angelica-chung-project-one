@@ -465,23 +465,11 @@ form button {
 }
 
 @media (max-width: 480px) {
-	h1 {
-		/* font-size: 6rem;
-		line-height: 6rem; */
-		/* margin-bottom: 0; */
-	}
+
 	.logo,
 	.social-media {
 		visibility: hidden;
 	}
-	.landing-text {
-		
-		/* width: 50%; */
-	}
-	/* .landing-text p {
-		font-size: 1.8rem;
-		line-height: 2.1rem;
-	} */
 	.new-models-section h2,
 	.night-drive-section h2 {
 		line-height: auto;

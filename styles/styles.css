@@ -84,12 +84,9 @@ button {
 
 /* Start header styling */
 header {
-	/* Background image sizing and positioning */
 	background: url("../assets/hero-image.png") center no-repeat fixed;
 	background-size: cover;
 	height: 100vh;
-
-	/* Create an anchor for the .social-media and .landing-text */
 	position: relative;
 }
 
@@ -125,8 +122,52 @@ header {
 
 .hamburg-menu {
 	display: none;
-	font-size: 50px;
 	float: right;
+}
+
+.hamburg-menu-nav {
+	background: #0B0101 ;
+	position: fixed;
+	z-index: 10;
+	width: 200px;
+	right: -200px;
+	top: 0px;
+	padding-top: 80px;
+	height: 100%;
+	transition: all 0.5s;
+}
+
+.hamburg-menu-nav a {
+	border-bottom: 1px solid #6C0918;
+	display: inline-block;
+	font-size: 3rem;
+	text-align: right;
+	width: 100%;
+	padding: 20px;
+	transition: all 0.3s;
+}
+
+.hamburg-menu-nav a:hover,
+.hamburg-menu-nav a:focus {
+	background: #6C0918;
+}
+.hamburg-menu input[type="checkbox"]:checked + .hamburg-menu-nav {
+	right: 0; 
+}
+.hamburg-menu input[type="checkbox"] {
+	opacity: 0;
+}
+.menu-close,
+.menu-open {
+	position: absolute;
+	top: 20px;
+	right: 5%;
+	color: white;
+	font-size: 3.5rem;
+}
+
+.menu-close {
+	right: 5%;
 }
 
 
@@ -374,6 +415,7 @@ form button {
 		margin-top: 20px;
 	}
 }
+
 @media (max-width: 990px) {
 
 	h1 {
@@ -519,10 +561,4 @@ form button {
 		line-height: auto;
 		font-size: 3.5rem;
 	} 
-	/* .address {
-		width: 62%;
-	}
-	.footer-nav {
-		width: 33%;
-	} */
 }
